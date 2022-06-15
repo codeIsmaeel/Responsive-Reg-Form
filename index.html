@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./favicon-32x32.png" type="image/x-icon" />
+    <title>Reg-Form</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="desktop">
+      <main>
+        <div class="box-1">
+          <h2>Learn to code by watching others</h2>
+          <p class="content">
+            See how experienced developers solve problems in real-time. Watching
+            tutorials is great, but understanding how developers think is
+            invalauable.
+          </p>
+        </div>
+
+        <div class="box-2">
+          <button class="button-1" type="submit" value="submit">
+            <strong>Try it free 7 days</strong> then $20/mo. thereafter
+          </button>
+
+          <div class="form-group">
+            <form action=""></form>
+            <div class="my-form">
+              <input
+                type="text"
+                name="fname"
+                id="fname"
+                placeholder="First name"
+                required
+              />
+              <p class="error" id="fname-length-error" role="alert">First Name cannot be empty</p>
+            </div>
+
+            <div class="my-form">
+              <input
+                type="text"
+                name="lname"
+                placeholder="Last Name"
+                required
+              />
+              <p class="error" id="Lname-error" role="alert">Last Name cannot be empty</p>
+            </div>
+
+            <div class="my-form">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email Address"
+                pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+                required
+              />
+              <p class="error" id="fname-length-error" role="alert">Looks like this is not an email</p>
+            </div>
+
+            <div class="my-form">
+              <input
+                type="password"
+                name="pswd"
+                id="pswd"
+                placeholder="Choose an 8-digit Password"
+                pattern="(?=.*/d) (?=.*[a-z]) (?=.[A-Z]) . {8,}"
+                required
+                title="Must contain at least one number and one upercase letter, and at least 8 or more characters"
+              />
+              <p class="error" id="fname-length-error" role="alert">Password cannot be empty</p>
+
+                <button class="button-2" type="submit" value="submit">
+                CLAIM YOUR FREE TRIAL
+                </button>
+                <p class="buttom">
+                By clicking the button, you are agreeing to our
+                <strong>Terms and Services.</strong>
+                </p>
+            </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
